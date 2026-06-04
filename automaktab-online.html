@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="O'zbekiston haydovchilik guvohnomasi 2026 — online mustaqil tayyorgarlik. Testlar, yo'l belgilari, qoidalar, biletlar.">
+<meta name="keywords" content="haydovchilik guvohnomasi, prava, avtotest, YHQ 2026, yo'l belgilari, online test, automaktab">
+<title>AutoMaktab Online — Haydovchilik Imtihoni 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --c-primary:#1a56db;
+  --c-primary-dark:#1342b0;
+  --c-primary-light:#eff4ff;
+  --c-success:#0e9f6e;
+  --c-success-light:#f3faf7;
+  --c-danger:#e02424;
+  --c-danger-light:#fdf2f2;
+  --c-warning:#c27803;
+  --c-warning-light:#fdf6b2;
+  --c-gray-50:#f9fafb;
+  --c-gray-100:#f3f4f6;
+  --c-gray-200:#e5e7eb;
+  --c-gray-300:#d1d5db;
+  --c-gray-500:#6b7280;
+  --c-gray-700:#374151;
+  --c-gray-900:#111827;
+  --c-white:#ffffff;
+  --radius:10px;
+  --radius-sm:6px;
+  --shadow:0 1px 3px rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.06);
+  --shadow-md:0 4px 6px -1px rgba(0,0,0,.08),0 2px 4px -1px rgba(0,0,0,.05);
+}
+body{font-family:'Inter',sans-serif;background:var(--c-gray-50);color:var(--c-gray-900);font-size:15px;line-height:1.6}
+a{color:var(--c-primary);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* NAV */
+nav{background:var(--c-white);border-bottom:1px solid var(--c-gray-200);position:sticky;top:0;z-index:100}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--c-primary)}
+.logo svg{width:34px;height:34px}
+.nav-links{display:flex;gap:4px}
+.nav-links a{padding:6px 12px;border-radius:var(--radius-sm);color:var(--c-gray-700);font-size:14px;font-weight:500;transition:background .15s}
+.nav-links a:hover,.nav-links a.active{background:var(--c-primary-light);color:var(--c-primary);text-decoration:none}
+.hamburger{display:none;cursor:pointer;padding:8px;border-radius:var(--radius-sm);background:none;border:none;color:var(--c-gray-700)}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#1a56db 0%,#0f3c9e 100%);color:white;padding:64px 20px 56px;text-align:center}
+.hero h1{font-size:clamp(26px,5vw,44px);font-weight:700;margin-bottom:14px;letter-spacing:-0.5px}
+.hero p{font-size:17px;opacity:.88;max-width:560px;margin:0 auto 32px}
+.hero-badges{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:36px}
+.badge{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);border-radius:20px;padding:6px 14px;font-size:13px;font-weight:500}
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:var(--radius);font-weight:600;font-size:15px;cursor:pointer;border:none;transition:all .2s;text-decoration:none}
+.btn-white{background:white;color:var(--c-primary)}
+.btn-white:hover{background:#f0f4ff;text-decoration:none;color:var(--c-primary)}
+.btn-outline-white{background:transparent;color:white;border:2px solid rgba(255,255,255,.6)}
+.btn-outline-white:hover{background:rgba(255,255,255,.1);text-decoration:none;color:white}
+.btn-primary{background:var(--c-primary);color:white}
+.btn-primary:hover{background:var(--c-primary-dark);text-decoration:none;color:white}
+.btn-success{background:var(--c-success);color:white}
+.btn-success:hover{background:#087f5b;text-decoration:none;color:white}
+.btn-danger{background:var(--c-danger);color:white}
+.btn-danger:hover{background:#b91c1c;text-decoration:none;color:white}
+
+/* STATS */
+.stats{background:var(--c-white);border-bottom:1px solid var(--c-gray-200)}
+.stats-grid{max-width:1100px;margin:0 auto;padding:28px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0}
+.stat-item{text-align:center;padding:16px 12px;border-right:1px solid var(--c-gray-200)}
+.stat-item:last-child{border-right:none}
+.stat-num{font-size:28px;font-weight:700;color:var(--c-primary)}
+.stat-label{font-size:13px;color:var(--c-gray-500);margin-top:2px}
+
+/* SECTION LAYOUT */
+.section{max-width:1100px;margin:0 auto;padding:48px 20px}
+.section-header{margin-bottom:32px}
+.section-tag{display:inline-block;background:var(--c-primary-light);color:var(--c-primary);font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;margin-bottom:10px;text-transform:uppercase;letter-spacing:.5px}
+.section-header h2{font-size:26px;font-weight:700;margin-bottom:8px}
+.section-header p{color:var(--c-gray-500);font-size:15px}
+
+/* CARDS GRID */
+.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.grid-4{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:var(--c-white);border:1px solid var(--c-gray-200);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);transition:box-shadow .2s,transform .2s}
+.card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
+.card-icon{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:14px}
+.card-icon.blue{background:var(--c-primary-light);color:var(--c-primary)}
+.card-icon.green{background:var(--c-success-light);color:var(--c-success)}
+.card-icon.amber{background:#fffbeb;color:#92400e}
+.card-icon.red{background:var(--c-danger-light);color:var(--c-danger)}
+.card h3{font-size:16px;font-weight:600;margin-bottom:8px}
+.card p{font-size:14px;color:var(--c-gray-500);line-height:1.6}
+
+/* TEST SECTION */
+.test-container{background:var(--c-white);border:1px solid var(--c-gray-200);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.test-header{background:var(--c-gray-50);border-bottom:1px solid var(--c-gray-200);padding:16px 24px;display:flex;align-items:center;justify-content:space-between}
+.test-header h3{font-size:16px;font-weight:600}
+.progress-bar-wrap{height:6px;background:var(--c-gray-200);border-radius:3px;margin:0 0 0 auto;width:200px}
+.progress-bar{height:6px;background:var(--c-primary);border-radius:3px;transition:width .3s}
+.test-body{padding:28px 24px}
+.question-num{font-size:13px;color:var(--c-gray-500);margin-bottom:10px;font-weight:500}
+.question-text{font-size:17px;font-weight:600;margin-bottom:22px;line-height:1.5;color:var(--c-gray-900)}
+.options-list{display:flex;flex-direction:column;gap:10px}
+.option{display:flex;align-items:flex-start;gap:12px;padding:13px 16px;border:1.5px solid var(--c-gray-200);border-radius:var(--radius-sm);cursor:pointer;transition:all .2s;background:var(--c-white);text-align:left;font-size:15px;width:100%}
+.option:hover{border-color:var(--c-primary);background:var(--c-primary-light)}
+.option.correct{border-color:var(--c-success);background:var(--c-success-light);color:#065f46}
+.option.wrong{border-color:var(--c-danger);background:var(--c-danger-light);color:#9b1c1c}
+.option.disabled{pointer-events:none;opacity:.7}
+.option-letter{min-width:26px;height:26px;border-radius:50%;background:var(--c-gray-100);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:var(--c-gray-700);flex-shrink:0;margin-top:1px}
+.option.correct .option-letter{background:var(--c-success);color:white}
+.option.wrong .option-letter{background:var(--c-danger);color:white}
+.test-footer{padding:16px 24px;border-top:1px solid var(--c-gray-200);display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.test-score{font-size:14px;color:var(--c-gray-500);font-weight:500}
+.explanation{background:var(--c-primary-light);border-left:4px solid var(--c-primary);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:14px 16px;margin-top:18px;font-size:14px;color:#1e3a8a;line-height:1.6;display:none}
+.explanation.show{display:block}
+
+/* ROAD SIGNS */
+.signs-filter{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.filter-btn{padding:7px 16px;border-radius:20px;border:1.5px solid var(--c-gray-300);background:var(--c-white);font-size:13px;font-weight:500;cursor:pointer;color:var(--c-gray-700);transition:all .2s}
+.filter-btn:hover,.filter-btn.active{background:var(--c-primary);border-color:var(--c-primary);color:white}
+.signs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:14px}
+.sign-card{background:var(--c-white);border:1px solid var(--c-gray-200);border-radius:var(--radius);padding:14px 12px;text-align:center;cursor:pointer;transition:all .2s;box-shadow:var(--shadow)}
+.sign-card:hover{border-color:var(--c-primary);box-shadow:var(--shadow-md);transform:translateY(-2px)}
+.sign-svg{width:72px;height:72px;margin:0 auto 10px;display:flex;align-items:center;justify-content:center}
+.sign-name{font-size:12px;font-weight:600;color:var(--c-gray-700);line-height:1.3;margin-bottom:4px}
+.sign-cat{font-size:11px;color:var(--c-gray-500)}
+.sign-modal{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);z-index:200;align-items:center;justify-content:center;padding:20px}
+.sign-modal.show{display:flex}
+.sign-modal-content{background:var(--c-white);border-radius:var(--radius);max-width:440px;width:100%;padding:28px;position:relative;box-shadow:0 20px 40px rgba(0,0,0,.2)}
+.sign-modal-close{position:absolute;top:12px;right:12px;background:var(--c-gray-100);border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;color:var(--c-gray-700)}
+
+/* QOIDALAR */
+.rules-accordion{display:flex;flex-direction:column;gap:8px}
+.accordion-item{border:1px solid var(--c-gray-200);border-radius:var(--radius);overflow:hidden;background:var(--c-white)}
+.accordion-header{padding:16px 20px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;font-weight:600;font-size:15px;gap:12px;transition:background .15s}
+.accordion-header:hover{background:var(--c-gray-50)}
+.accordion-num{min-width:28px;height:28px;background:var(--c-primary-light);color:var(--c-primary);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0}
+.accordion-arrow{color:var(--c-gray-500);transition:transform .25s;flex-shrink:0}
+.accordion-item.open .accordion-arrow{transform:rotate(180deg)}
+.accordion-body{display:none;padding:0 20px 18px;font-size:14px;color:var(--c-gray-700);line-height:1.7}
+.accordion-item.open .accordion-body{display:block}
+.rule-tip{background:var(--c-warning-light);border-left:3px solid var(--c-warning);padding:10px 14px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;margin-top:12px;font-size:13px;color:#78350f}
+
+/* SPEED LIMITS */
+.speed-table{width:100%;border-collapse:collapse;font-size:14px;background:var(--c-white);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.speed-table th{background:var(--c-primary);color:white;padding:12px 16px;text-align:left;font-weight:600;font-size:13px}
+.speed-table td{padding:12px 16px;border-bottom:1px solid var(--c-gray-100)}
+.speed-table tr:last-child td{border-bottom:none}
+.speed-table tr:nth-child(even) td{background:var(--c-gray-50)}
+.speed-badge{display:inline-block;background:var(--c-danger-light);color:var(--c-danger);font-weight:700;padding:3px 10px;border-radius:12px;font-size:14px;min-width:52px;text-align:center}
+
+/* JARIMA */
+.jarima-card{background:var(--c-white);border:1px solid var(--c-gray-200);border-radius:var(--radius);padding:18px 20px;box-shadow:var(--shadow);display:flex;align-items:center;gap:16px}
+.jarima-icon{font-size:28px}
+.jarima-info h4{font-size:15px;font-weight:600;margin-bottom:4px}
+.jarima-info p{font-size:13px;color:var(--c-gray-500)}
+.jarima-amount{margin-left:auto;text-align:right;flex-shrink:0}
+.jarima-amount span{font-size:16px;font-weight:700;color:var(--c-danger);display:block}
+.jarima-amount small{font-size:12px;color:var(--c-gray-500)}
+
+/* TIPS */
+.tips-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.tip-card{background:var(--c-white);border:1px solid var(--c-gray-200);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+.tip-num{font-size:36px;font-weight:700;color:var(--c-gray-200);margin-bottom:10px;line-height:1}
+.tip-card h4{font-size:15px;font-weight:600;margin-bottom:8px}
+.tip-card p{font-size:13px;color:var(--c-gray-500);line-height:1.6}
+
+/* EXAM INFO */
+.exam-steps{display:flex;flex-direction:column;gap:0}
+.exam-step{display:flex;gap:20px;padding-bottom:28px;position:relative}
+.exam-step:not(:last-child)::before{content:'';position:absolute;left:19px;top:40px;bottom:0;width:2px;background:var(--c-gray-200)}
+.step-num{min-width:40px;height:40px;background:var(--c-primary);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;flex-shrink:0;position:relative;z-index:1}
+.step-content h4{font-size:15px;font-weight:600;margin-bottom:6px;margin-top:8px}
+.step-content p{font-size:14px;color:var(--c-gray-500);line-height:1.6}
+
+/* TABS */
+.tab-nav{display:flex;gap:4px;border-bottom:2px solid var(--c-gray-200);margin-bottom:28px}
+.tab-btn{padding:10px 18px;border:none;background:none;cursor:pointer;font-size:14px;font-weight:500;color:var(--c-gray-500);border-bottom:2px solid transparent;margin-bottom:-2px;transition:all .2s;border-radius:var(--radius-sm) var(--radius-sm) 0 0}
+.tab-btn:hover{color:var(--c-gray-900);background:var(--c-gray-50)}
+.tab-btn.active{color:var(--c-primary);border-bottom-color:var(--c-primary);background:var(--c-primary-light)}
+.tab-content{display:none}
+.tab-content.active{display:block}
+
+/* RESULT SCREEN */
+.result-screen{display:none;text-align:center;padding:32px 24px}
+.result-screen.show{display:block}
+.result-circle{width:100px;height:100px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:36px;font-weight:700}
+.result-circle.pass{background:var(--c-success-light);color:var(--c-success);border:3px solid var(--c-success)}
+.result-circle.fail{background:var(--c-danger-light);color:var(--c-danger);border:3px solid var(--c-danger)}
+
+/* FOOTER */
+footer{background:var(--c-gray-900);color:var(--c-gray-300);padding:40px 20px 28px;margin-top:60px}
+.footer-inner{max-width:1100px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px;margin-bottom:32px}
+.footer-brand p{font-size:13px;color:var(--c-gray-500);margin-top:8px}
+.footer-col h4{font-size:14px;font-weight:600;color:white;margin-bottom:12px}
+.footer-col a{display:block;font-size:14px;color:var(--c-gray-500);margin-bottom:8px;text-decoration:none;transition:color .15s}
+.footer-col a:hover{color:white}
+.footer-bottom{border-top:1px solid #374151;padding-top:24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:gap;gap:12px;font-size:13px;color:var(--c-gray-500)}
+.footer-logo-text{font-size:20px;font-weight:700;color:white}
+
+/* RESPONSIVE */
+@media(max-width:640px){
+  .hamburger{display:flex;align-items:center;justify-content:center}
+  .nav-links{display:none;flex-direction:column;position:absolute;top:60px;left:0;right:0;background:var(--c-white);border-bottom:1px solid var(--c-gray-200);padding:12px;gap:4px;box-shadow:var(--shadow-md)}
+  .nav-links.open{display:flex}
+  .nav-links a{width:100%;padding:12px 16px}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .stat-item:nth-child(2n){border-right:none}
+  .stat-item{border-bottom:1px solid var(--c-gray-200)}
+  .hero h1{font-size:26px}
+  .test-header{flex-direction:column;align-items:flex-start;gap:10px}
+  .progress-bar-wrap{width:100%;margin:0}
+  .test-footer{flex-direction:column;align-items:stretch}
+  .test-footer .btn{width:100%;justify-content:center}
+  .signs-grid{grid-template-columns:repeat(auto-fill,minmax(110px,1fr))}
+}
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="logo">
+      <svg viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="34" height="34" rx="8" fill="#1a56db"/>
+        <path d="M8 22l5-10 4 6 3-4 6 8" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="10" cy="24" r="2.5" fill="white"/>
+        <circle cx="24" cy="24" r="2.5" fill="white"/>
+      </svg>
+      AutoMaktab Online
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="#tests" class="active" onclick="navTo(this,'tests')">Testlar</a>
+      <a href="#signs" onclick="navTo(this,'signs')">Yo'l belgilari</a>
+      <a href="#rules" onclick="navTo(this,'rules')">Qoidalar</a>
+      <a href="#jarima" onclick="navTo(this,'jarima')">Jarimalar</a>
+      <a href="#imtihon" onclick="navTo(this,'imtihon')">Imtihon</a>
+      <a href="#maslahat" onclick="navTo(this,'maslahat')">Maslahatlar</a>
+    </div>
+    <button class="hamburger" id="hamburgerBtn" onclick="toggleMenu()" aria-label="Menu">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="19" y2="6"/><line x1="3" y1="11" x2="19" y2="11"/><line x1="3" y1="16" x2="19" y2="16"/>
+      </svg>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Haydovchilik Imtihoniga<br>Mustaqil Tayyorlaning</h1>
+  <p>O'zbekiston YHQ 2026 — 111 ta bilet, 1500+ savol, yo'l belgilari, jarimalar va imtihon qoidalari. Bepul, online, hamma qurilmada.</p>
+  <div class="hero-badges">
+    <span class="badge">✓ 111 ta bilet</span>
+    <span class="badge">✓ 1500+ savol</span>
+    <span class="badge">✓ Yo'l belgilari</span>
+    <span class="badge">✓ 2026 yangi qoidalar</span>
+    <span class="badge">✓ Offline ishlaydi</span>
+  </div>
+  <div class="hero-btns">
+    <a href="#tests" class="btn btn-white" onclick="scrollTo2('tests')">Test boshlash</a>
+    <a href="#signs" class="btn btn-outline-white" onclick="scrollTo2('signs')">Yo'l belgilari</a>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stats-grid">
+    <div class="stat-item"><div class="stat-num">1500+</div><div class="stat-label">Test savollari</div></div>
+    <div class="stat-item"><div class="stat-num">111</div><div class="stat-label">Bilet</div></div>
+    <div class="stat-item"><div class="stat-num">200+</div><div class="stat-label">Yo'l belgilari</div></div>
+    <div class="stat-item"><div class="stat-num">2026</div><div class="stat-label">Yangi standart</div></div>
+    <div class="stat-item"><div class="stat-num">18/20</div><div class="stat-label">O'tish ball</div></div>
+  </div>
+</div>
+
+<!-- ABOUT FEATURES -->
+<section class="section">
+  <div class="section-header">
+    <span class="section-tag">Nima uchun AutoMaktab Online?</span>
+    <h2>Mustaqil o'rganuvchilar uchun to'liq platforma</h2>
+    <p>Avto maktabga bormasdan, o'z vaqtingizda, istalgan joydan tayyorlaning.</p>
+  </div>
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-icon blue">📝</div>
+      <h3>Real imtihon formati</h3>
+      <p>Yagona imtihon markazi standartlariga to'liq mos — 20 savol, 25 daqiqa, 18 to'g'ri javob kerak. Xuddi real sharoitda mashq qiling.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon green">🗂</div>
+      <h3>Barcha biletlar</h3>
+      <p>111 ta rasmiy bilet, har birida 20 ta savol. Kategoriyalar bo'yicha: yo'l belgilari, chorrahalar, tezlik cheklovlari, jarimalar, tibbiy yordam.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon amber">📍</div>
+      <h3>Yo'l belgilarini o'rganing</h3>
+      <p>O'zbekistondagi 200+ rasmiy yo'l belgisi — kategoriyalar bo'yicha. Har bir belgining ma'nosi va qo'llanilish joyi bilan.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon red">⚖️</div>
+      <h3>Jarimalar jadvali</h3>
+      <p>2026-yil qoidabuzarliklari va ularning jarimalari — base unitsdan UZS gacha aniq miqdorlar. To'liq yangilangan.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon blue">🎯</div>
+      <h3>Xatolar ustida ishlash</h3>
+      <p>Har bir noto'g'ri javobdan keyin tushuntirish beriladi. Qaysi mavzularni qayta o'rganish kerakligini bilib olasiz.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon green">📱</div>
+      <h3>Barcha qurilmada</h3>
+      <p>Telefon, planshet, kompyuter — xohlagan qurilmada ishlaydi. Internet kerak bo'lmagan paytda ham qo'llanma ishlatiladi.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTS SECTION -->
+<section class="section" id="tests">
+  <div class="section-header">
+    <span class="section-tag">Testlar</span>
+    <h2>Online test ishlash</h2>
+    <p>Imtihon rejimida yoki mashq rejimida o'rganing</p>
+  </div>
+
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="switchTab('exam')">Imtihon rejimi</button>
+    <button class="tab-btn" onclick="switchTab('practice')">Mashq rejimi</button>
+    <button class="tab-btn" onclick="switchTab('topic')">Mavzu bo'yicha</button>
+  </div>
+
+  <!-- EXAM MODE -->
+  <div class="tab-content active" id="tab-exam">
+    <div class="test-container">
+      <div class="test-header">
+        <div>
+          <h3 id="testTitle">Imtihon rejimi — Bilet #1</h3>
+          <div style="font-size:13px;color:var(--c-gray-500);margin-top:2px" id="timerDisplay">Vaqt: <b id="timer">25:00</b></div>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px">
+          <div class="progress-bar-wrap"><div class="progress-bar" id="progressBar" style="width:5%"></div></div>
+          <div style="font-size:12px;color:var(--c-gray-500)" id="progressText">1 / 20</div>
+        </div>
+      </div>
+      <div class="test-body" id="testBody">
+        <div class="question-num" id="questionNum">Savol 1 / 20</div>
+        <div class="question-text" id="questionText"></div>
+        <div class="options-list" id="optionsList"></div>
+        <div class="explanation" id="explanationBox"></div>
+      </div>
+      <div class="result-screen" id="resultScreen">
+        <div class="result-circle" id="resultCircle"></div>
+        <h2 id="resultTitle" style="font-size:22px;font-weight:700;margin-bottom:8px"></h2>
+        <p id="resultMsg" style="color:var(--c-gray-500);font-size:15px;margin-bottom:8px"></p>
+        <p id="resultDetail" style="font-weight:600;font-size:17px;margin-bottom:24px"></p>
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+          <button class="btn btn-primary" onclick="restartTest()">Qayta boshlash</button>
+          <button class="btn btn-success" onclick="scrollTo2('signs')">Yo'l belgilarini o'rgan</button>
+        </div>
+      </div>
+      <div class="test-footer">
+        <div class="test-score" id="testScore">To'g'ri: 0 | Noto'g'ri: 0</div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <button class="btn btn-primary" id="nextBtn" onclick="nextQuestion()" style="display:none">Keyingisi →</button>
+          <button class="btn btn-outline-white" onclick="restartTest()" style="background:var(--c-gray-100);color:var(--c-gray-700);border:1px solid var(--c-gray-300)">Yangi bilet</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRACTICE MODE -->
+  <div class="tab-content" id="tab-practice">
+    <div class="test-container">
+      <div class="test-header">
+        <h3>Mashq rejimi — javoblarni ko'rish mumkin</h3>
+      </div>
+      <div class="test-body" id="practiceBody">
+        <div class="question-num" id="practiceNum">Savol 1 / 20</div>
+        <div class="question-text" id="practiceText"></div>
+        <div class="options-list" id="practiceOptions"></div>
+        <div class="explanation" id="practiceExp" style="margin-top:16px"></div>
+      </div>
+      <div class="test-footer">
+        <div class="test-score" id="practiceScore">To'g'ri: 0 | Noto'g'ri: 0</div>
+        <div style="display:flex;gap:10px">
+          <button class="btn btn-primary" id="practiceNextBtn" onclick="practiceNext()">Keyingisi →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOPIC MODE -->
+  <div class="tab-content" id="tab-topic">
+    <div class="grid-4" style="margin-bottom:24px">
+      <div class="card" style="cursor:pointer" onclick="startTopicTest('signs')">
+        <div class="card-icon blue">🔴</div>
+        <h3>Yo'l belgilari</h3>
+        <p>150+ savol yo'l belgilari bo'yicha</p>
+        <button class="btn btn-primary" style="margin-top:14px;width:100%;justify-content:center">Boshlash</button>
+      </div>
+      <div class="card" style="cursor:pointer" onclick="startTopicTest('crossroads')">
+        <div class="card-icon amber">🚦</div>
+        <h3>Chorrahalar</h3>
+        <p>Ustunlik qoidalari va signal berish</p>
+        <button class="btn btn-primary" style="margin-top:14px;width:100%;justify-content:center">Boshlash</button>
+      </div>
+      <div class="card" style="cursor:pointer" onclick="startTopicTest('speed')">
+        <div class="card-icon red">⚡</div>
+        <h3>Tezlik cheklovlari</h3>
+        <p>Turli yo'l turlarida tezlik qoidalari</p>
+        <button class="btn btn-primary" style="margin-top:14px;width:100%;justify-content:center">Boshlash</button>
+      </div>
+      <div class="card" style="cursor:pointer" onclick="startTopicTest('firstaid')">
+        <div class="card-icon green">🏥</div>
+        <h3>Birinchi yordam</h3>
+        <p>Favqulodda holatlarda yordam</p>
+        <button class="btn btn-primary" style="margin-top:14px;width:100%;justify-content:center">Boshlash</button>
+      </div>
+    </div>
+    <div id="topicTestArea"></div>
+  </div>
+</section>
+
+<!-- ROAD SIGNS -->
+<section class="section" id="signs" style="background:var(--c-white);max-width:100%;padding:48px 0">
+  <div style="max-width:1100px;margin:0 auto;padding:0 20px">
+    <div class="section-header">
+      <span class="section-tag">Yo'l belgilari</span>
+      <h2>O'zbekiston yo'l belgilari 2026</h2>
+      <p>Rasmiy YHQ bo'yicha barcha yo'l belgilari — kategoriyalar bo'yicha o'rganing</p>
+    </div>
+    <div class="signs-filter" id="signsFilter"></div>
+    <div class="signs-grid" id="signsGrid"></div>
+  </div>
+</section>
+
+<!-- sign modal -->
+<div class="sign-modal" id="signModal" onclick="closeSignModal(event)">
+  <div class="sign-modal-content">
+    <button class="sign-modal-close" onclick="document.getElementById('signModal').classList.remove('show')">✕</button>
+    <div id="signModalSvg" style="text-align:center;margin-bottom:16px"></div>
+    <h3 id="signModalName" style="font-size:18px;font-weight:700;margin-bottom:6px"></h3>
+    <div style="display:inline-block;font-size:12px;font-weight:600;padding:3px 10px;border-radius:12px;margin-bottom:12px" id="signModalCat"></div>
+    <p id="signModalDesc" style="font-size:14px;color:var(--c-gray-700);line-height:1.6;margin-bottom:14px"></p>
+    <div id="signModalTip" style="background:var(--c-primary-light);border-left:4px solid var(--c-primary);padding:12px 14px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:13px;color:#1e3a8a"></div>
+  </div>
+</div>
+
+<!-- QOIDALAR -->
+<section class="section" id="rules">
+  <div class="section-header">
+    <span class="section-tag">YHQ Qoidalari</span>
+    <h2>Yo'l harakati qoidalari 2026</h2>
+    <p>Eng muhim va imtihonda tez-tez chiqadigan qoidalar</p>
+  </div>
+  <div class="rules-accordion" id="rulesAccordion"></div>
+</section>
+
+<!-- TEZLIK VA JARIMA -->
+<section class="section" id="jarima" style="background:var(--c-white);max-width:100%;padding:48px 0">
+  <div style="max-width:1100px;margin:0 auto;padding:0 20px">
+    <div class="tab-nav">
+      <button class="tab-btn active" onclick="switchJarimaTab('speed')">Tezlik cheklovlari</button>
+      <button class="tab-btn" onclick="switchJarimaTab('fines')">Jarimalar 2026</button>
+      <button class="tab-btn" onclick="switchJarimaTab('docs')">Hujjatlar</button>
+    </div>
+
+    <div class="tab-content active" id="jtab-speed">
+      <div class="section-header">
+        <h2>Tezlik cheklovlari jadvali</h2>
+        <p>O'zbekistonda 2026-yilgi amaldagi tezlik cheklovlari</p>
+      </div>
+      <table class="speed-table">
+        <thead><tr><th>Yo'l turi</th><th>Transport vositasi</th><th>Maks. tezlik</th><th>Izoh</th></tr></thead>
+        <tbody>
+          <tr><td>Aholi punkti ichida</td><td>Barcha avtomobillar</td><td><span class="speed-badge">60 km/h</span></td><td>Belgilangan zonalarda 20–40 km/h</td></tr>
+          <tr><td>Aholi punkti tashqarisida</td><td>Yengil avtomobillar</td><td><span class="speed-badge">90 km/h</span></td><td>Yuk mashinasi: 70 km/h</td></tr>
+          <tr><td>Magistral yo'l</td><td>Yengil avtomobillar</td><td><span class="speed-badge">110 km/h</span></td><td>Yuk mashinasi: 90 km/h</td></tr>
+          <tr><td>Avtomobil yo'li (expressway)</td><td>Yengil avtomobillar</td><td><span class="speed-badge">130 km/h</span></td><td>Belgilangan bo'limlarda</td></tr>
+          <tr><td>Maktab yaqinida</td><td>Barcha</td><td><span class="speed-badge">20 km/h</span></td><td>Maktab ishlaydigan vaqtda</td></tr>
+          <tr><td>Yashash zonasi</td><td>Barcha</td><td><span class="speed-badge">20 km/h</span></td><td>Piyoda va velosipedchi ustunligi</td></tr>
+          <tr><td>Burilish/to'xtash joyida</td><td>Barcha</td><td><span class="speed-badge">40 km/h</span></td><td>Belgilanmasa ham</td></tr>
+          <tr><td>Tunnel ichida</td><td>Barcha</td><td><span class="speed-badge">60 km/h</span></td><td>Ko'rinish cheklangan</td></tr>
+        </tbody>
+      </table>
+      <div class="rule-tip" style="margin-top:16px">⚠️ Namlik yoki muzli yo'lda tezlikni kamida 30-40% kamaytirish tavsiya etiladi. Tezlik belgisi ko'rinmaganida aholi punktida 60 km/h, tashqarisida 90 km/h qoida qo'llanadi.</div>
+    </div>
+
+    <div class="tab-content" id="jtab-fines">
+      <div class="section-header">
+        <h2>Qoidabuzarliklar va jarimalar 2026</h2>
+        <p>O'zbekiston haydovchilik qoidabuzarliklari uchun amaldagi jarimalar</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px" id="jarimaList"></div>
+    </div>
+
+    <div class="tab-content" id="jtab-docs">
+      <div class="section-header">
+        <h2>Haydovchi majburiy hujjatlari</h2>
+        <p>Yo'lda doim yonizda bo'lishi kerak bo'lgan hujjatlar</p>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon blue">🪪</div>
+          <h3>Haydovchilik guvohnomasi</h3>
+          <p>Toifaga mos bo'lgan guvohnoma. Muddati o'tmagan bo'lishi shart. Kategoriya: A, B, C, D, E.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon green">📄</div>
+          <h3>Transport vositasi pasporti</h3>
+          <p>TP yoki texnik pasport. Avtomobilning hujjatli egaligi va texnik holati tasdiqlanadi.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon amber">🛡</div>
+          <h3>Sug'urta polisi (MCHJ)</h3>
+          <p>Majburiy fuqarolik javobgarligi sug'urtasi (OSAGO). Muddati o'tmagan bo'lishi shart.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon red">✅</div>
+          <h3>Texnik ko'rik belgisi</h3>
+          <p>Texnik ko'rikdan o'tganligini tasdiqlovchi raqam yoki stiker. Har 1–2 yilda yangilanadi.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon blue">🆔</div>
+          <h3>Passport yoki ID karta</h3>
+          <p>Haydovchi shaxsini tasdiqlovchi hujjat. Chet el fuqarolari uchun xalqaro haydovchilik guvohnomasi ham kerak.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon green">🩺</div>
+          <h3>Tibbiy yordam to'plami</h3>
+          <p>Majburiy emas, lekin tavsiya etiladi. Birinchi yordam ko'rsatish uchun aptechka, o't o'chiruvchi, uchburchak.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMTIHON JARAYONI -->
+<section class="section" id="imtihon">
+  <div class="section-header">
+    <span class="section-tag">Imtihon</span>
+    <h2>Haydovchilik guvohnomasi olish jarayoni</h2>
+    <p>Qadamba-qadam yo'riqnoma — 2026-yilgi amaldagi tartib</p>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px" class="exam-layout">
+    <div class="exam-steps">
+      <div class="exam-step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>Hujjatlarni tayyorlash</h4>
+          <p>Passport, 2 ta 3×4 fotosurat, tibbiy guvohnoma (086-shakl), davlat boji to'lovi kvitansiyasi.</p>
+        </div>
+      </div>
+      <div class="exam-step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>Tibbiy ko'rik</h4>
+          <p>Davlat tibbiy muassasasida ko'zdan kechirish. Ko'rish, eshitish, nevrologik holat tekshiriladi. 086-shakl beriladi.</p>
+        </div>
+      </div>
+      <div class="exam-step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>Nazariy imtihon (Kompyuter)</h4>
+          <p>20 ta savol, 25 daqiqa. Muvaffaqiyatli topshirish uchun 18 ta to'g'ri javob kerak. Yagona imtihon markazida.</p>
+        </div>
+      </div>
+      <div class="exam-step">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <h4>Maydonda amaliy imtihon</h4>
+          <p>Maxsus maydonda: to'xtash, garaj qo'yish, "8" raqami, tepalik, parallel qo'yish. DYHXX inspektori qabul qiladi.</p>
+        </div>
+      </div>
+      <div class="exam-step">
+        <div class="step-num">5</div>
+        <div class="step-content">
+          <h4>Shahar bo'ylab haydash</h4>
+          <p>Inspektor yonida haqiqiy yo'llarda haydash. Manevr, to'xtatish, chorrahalardan o'tish tekshiriladi.</p>
+        </div>
+      </div>
+      <div class="exam-step">
+        <div class="step-num">6</div>
+        <div class="step-content">
+          <h4>Guvohnoma olish</h4>
+          <p>Barcha bosqichlardan o'tgach DYHXX bo'linmasida haydovchilik guvohnomasi beriladi. Muddati 10 yil.</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card" style="margin-bottom:16px">
+        <h3 style="margin-bottom:12px;font-size:16px">📋 Imtihon shartlari</h3>
+        <div style="display:flex;flex-direction:column;gap:8px;font-size:14px">
+          <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--c-gray-100)"><span style="color:var(--c-gray-500)">Savollar soni</span><strong>20 ta</strong></div>
+          <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--c-gray-100)"><span style="color:var(--c-gray-500)">Vaqt chegarasi</span><strong>25 daqiqa</strong></div>
+          <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--c-gray-100)"><span style="color:var(--c-gray-500)">O'tish uchun minimal ball</span><strong>18 / 20</strong></div>
+          <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--c-gray-100)"><span style="color:var(--c-gray-500)">Yoshga cheklov (B toifasi)</span><strong>18 yosh</strong></div>
+          <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--c-gray-100)"><span style="color:var(--c-gray-500)">Guvohnoma muddati</span><strong>10 yil</strong></div>
+          <div style="display:flex;justify-content:space-between;padding:8px 0"><span style="color:var(--c-gray-500)">Qayta topshirish muddati</span><strong>7 kundan keyin</strong></div>
+        </div>
+      </div>
+      <div class="card" style="background:var(--c-danger-light);border-color:#fecaca">
+        <h3 style="color:var(--c-danger);margin-bottom:10px">❌ Darhol muvaffaqiyatsiz</h3>
+        <p style="font-size:14px;color:#7f1d1d;line-height:1.6">2 yoki undan ko'p savol noto'g'ri javoblansa, imtihon darhol tugatiladi va muvaffaqiyatsiz hisoblanadi.</p>
+      </div>
+      <div class="card" style="margin-top:16px;background:var(--c-success-light);border-color:#a7f3d0">
+        <h3 style="color:var(--c-success);margin-bottom:10px">💡 Foydali ma'lumot</h3>
+        <p style="font-size:14px;color:#064e3b;line-height:1.6">Biletlarni tartibsiz o'rganing — real imtihonda savollar tasodifiy tanlanadi. Faqat birinchi biletni eslab olish yetarli emas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MASLAHATLAR -->
+<section class="section" id="maslahat" style="background:var(--c-white);max-width:100%;padding:48px 0">
+  <div style="max-width:1100px;margin:0 auto;padding:0 20px">
+    <div class="section-header">
+      <span class="section-tag">Maslahatlar</span>
+      <h2>Imtihondan o'tish uchun 12 ta maslahat</h2>
+      <p>Tajribali haydovchilar va imtihon topshirganlarning maslahatlaridan</p>
+    </div>
+    <div class="tips-grid" id="tipsList"></div>
+  </div>
+</section>
+
+<!-- BIRINCHI YORDAM -->
+<section class="section" id="firstaid">
+  <div class="section-header">
+    <span class="section-tag">Birinchi yordam</span>
+    <h2>Yo'l hodisasida birinchi yordam</h2>
+    <p>Imtihonda 2–3 ta savol birinchi yordam bo'yicha bo'ladi</p>
+  </div>
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-icon red" style="font-size:26px">🆘</div>
+      <h3>Darhol qilinishi kerak</h3>
+      <p style="font-size:14px;line-height:1.7;color:var(--c-gray-700)">1. Mashinani to'xtating va dvigatelni o'chiring<br>2. Favqulodda chiroqlarni yoqing<br>3. Uchburchakni 30–50 m qo'ying<br>4. 103/1050 raqamiga qo'ng'iroq qiling<br>5. Bemorni harakatsiz holda saqlang</p>
+    </div>
+    <div class="card">
+      <div class="card-icon amber" style="font-size:26px">🩹</div>
+      <h3>Qon to'xtaish</h3>
+      <p style="font-size:14px;line-height:1.7;color:var(--c-gray-700)">Arterial qon (qip-qizil, otiluvchi): to'g'irlovchi bog'lam tiqing va qo'l yoki oyoqni yuqoriga ko'taring.<br>Vena qoni (to'q qizil): bosuvchi bog'lam qo'ying.<br>Harakat qo'yilmaydi.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon green" style="font-size:26px">🫀</div>
+      <h3>Yurak to'xtashi</h3>
+      <p style="font-size:14px;line-height:1.7;color:var(--c-gray-700)">Ko'krak qafasiga bosish: minutiga 100–120 marta, 5–6 sm chuqurlikda.<br>Sun'iy nafas: 30 ta bosish : 2 ta nafas nisbatida.<br>Tiklangungacha yoki tez yordam kelgunicha davom eting.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon blue" style="font-size:26px">🦴</div>
+      <h3>Siniqlar va shikastlanishlar</h3>
+      <p style="font-size:14px;line-height:1.7;color:var(--c-gray-700)">Ochiq siniq: yarani sterile bint bilan berkiting. Suyak qismini qaytarmang.<br>Oyoq-qo'l siniq: harakatlantirishdan oldin shinani qo'ying.<br>Umurtqa: umuman harakatlantirmang.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon amber" style="font-size:26px">🔥</div>
+      <h3>Kuyishlar</h3>
+      <p style="font-size:14px;line-height:1.7;color:var(--c-gray-700)">Sovuq suv oqimi bilan 15–20 daqiqa sovuting.<br>Pufakchalarga tegmang, yorib yubormang.<br>Krem yoki moy surish mumkin emas.<br>Sterile bint bilan yoping va kasalxonaga yuboring.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon red" style="font-size:26px">🫁</div>
+      <h3>Zaharlanish va yo'l kasalligi</h3>
+      <p style="font-size:14px;line-height:1.7;color:var(--c-gray-700)">CO zaharlanishi (egzoz): toza havoga chiqaring, nafas olishiga yordam bering.<br>Hushdan ketsa: tili orqaga ketmasligi uchun yonboshiga yotkizib, boshini ortga og'diring.</p>
+    </div>
+  </div>
+  <div class="rule-tip" style="margin-top:20px">📞 <strong>Tez yordam:</strong> 103 (shahar) · <strong>Yagona raqam:</strong> 1050 · <strong>Yo'l politsiyasi:</strong> 102 · <strong>O't o'chirish:</strong> 101</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo-text">AutoMaktab Online</div>
+        <p>O'zbekiston haydovchilik guvohnomasi imtihoniga mustaqil tayyorlanish uchun bepul platforma. YHQ 2026 standartlariga muvofiq.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Testlar</h4>
+        <a href="#tests" onclick="scrollTo2('tests')">Imtihon rejimi</a>
+        <a href="#tests" onclick="scrollTo2('tests')">Mashq rejimi</a>
+        <a href="#tests" onclick="scrollTo2('tests')">Mavzu bo'yicha</a>
+        <a href="#signs" onclick="scrollTo2('signs')">Yo'l belgilari</a>
+      </div>
+      <div class="footer-col">
+        <h4>O'rganish</h4>
+        <a href="#rules" onclick="scrollTo2('rules')">YHQ Qoidalari</a>
+        <a href="#jarima" onclick="scrollTo2('jarima')">Jarimalar 2026</a>
+        <a href="#imtihon" onclick="scrollTo2('imtihon')">Imtihon jarayoni</a>
+        <a href="#firstaid" onclick="scrollTo2('firstaid')">Birinchi yordam</a>
+      </div>
+      <div class="footer-col">
+        <h4>Rasmiy manbalar</h4>
+        <a href="https://lex.uz" target="_blank" rel="noopener">Lex.uz — YHQ to'liq matni</a>
+        <a href="https://my.gov.uz" target="_blank" rel="noopener">My.gov.uz — Davlat xizmatlari</a>
+        <a href="https://yolqoidasi.uz" target="_blank" rel="noopener">Yolqoidasi.uz</a>
+        <a href="https://testavto.uz" target="_blank" rel="noopener">AvtoTest.uz</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 AutoMaktab Online — Bepul ta'lim platformasi</div>
+      <div>YHQ 2026 · DYHXX standartlari asosida</div>
+    </div>
+  </div>
+</footer>
+
+<style>
+@media(max-width:768px){
+  .exam-layout{grid-template-columns:1fr !important}
+}
+</style>
+
+<script>
+// ========== DATA ==========
+const questions = [
+  {q:"Qizil chiroqda to'xtash chizig'i bo'lmasa, haydovchi qayerda to'xtashi kerak?",opts:["Svetofor oldida","Chorrahadan 5 m oldin","Piyodalar yo'lidan oldin","Istalgan joyda"],ans:0,exp:"Haydovchi svetofor oldida, qatnov qismiga chiqmasdan to'xtashi shart."},
+  {q:"Yo'lda ustunlik huquqi kimda bo'ladi: 'Ustunlik yo'li' belgisi bo'lgan yo'lda ketayotgan yoki belgi bo'lmagan yo'ldan kelayotgan avtomobildami?",opts:["'Ustunlik yo'li' belgisi bo'lgan yo'lda ketayotganda","Belgi bo'lmagan yo'ldan kelayotganda","Ikkalasida teng","O'ngdan kelayotganda"],ans:0,exp:"'Ustunlik yo'li' belgisi bo'lgan yo'lda ketayotgan haydovchi ustunlik huquqiga ega."},
+  {q:"Haydovchi necha metrdan yo'naltiruvchi chiroqni yoqishi shart?",opts:["10 m oldin","30 m oldin","50 m oldin","100 m oldin"],ans:1,exp:"YHQ ga ko'ra haydovchi yo'nalishini o'zgartirish yoki to'xtashdan kamida 30 metr oldin signal berishi shart."},
+  {q:"Yashash zonasida ruxsat etilgan maksimal tezlik?",opts:["20 km/h","30 km/h","40 km/h","60 km/h"],ans:0,exp:"Yashash zonasi va hovli ichida maksimal tezlik 20 km/h. Bu hududlarda piyodalar va velosipedchilar ustunlikka ega."},
+  {q:"Chaqaloqni avtomobilga qanday o'tqazish kerak?",opts:["Oldinga, yo'l tomonida","Orqa o'rindiqqa, maxsus o'rindiq bilan","Erkakning quchog'ida","Ixtiyoriy tarzda"],ans:1,exp:"12 yoshgacha yoki bo'yi 150 sm dan past bolalar faqat maxsus bola o'rindiqlarida o'tirishi shart."},
+  {q:"'To'xtash ta'qiqlangan' va 'Turish ta'qiqlangan' belgilari o'rtasidagi farq nima?",opts:["Farq yo'q","'To'xtash ta'qiqli' — vaqtinchalik to'xtash ham mumkin emas","'Turish ta'qiqli' — hech narsa mumkin emas","'Turish ta'qiqli' — yo'lovchi tushirish mumkin"],ans:3,exp:"'Turish ta'qiqlangan' — avtomobil 5 daqiqadan ortiq qolishi mumkin emas, lekin yo'lovchi tushirish/olish uchun qisqacha to'xtatsa bo'ladi. 'To'xtash ta'qiqlangan' — umuman to'xtatish mumkin emas."},
+  {q:"Tungi vaqtda shahar tashqarisida qanday fara yoqilishi kerak?",opts:["Tumansizlik farasi","Uzoq nur farasi yoki yaqin nur farasi","Faqat tuman farasi","Fara kerak emas"],ans:1,exp:"Shahar tashqarisida tungi vaqtda uzoq nur (dальний) yoki sharoitga qarab yaqin nur (ближний) farasi yoqilishi shart."},
+  {q:"Arterial qon oqayotganda birinchi yordam qanday ko'rsatiladi?",opts:["Zarb joyini yuvish","Bosuvchi bog'lam va a'zoni ko'tarish","Yarani yopiq qoldirish","Krem surish"],ans:1,exp:"Arterial qon oqishida yaraga bosuvchi bog'lam qo'yiladi va zararlangan qo'l yoki oyoq yuqoriga ko'tariladi. Bosuvchi harakat qonni to'xtatishga yordam beradi."},
+  {q:"Haydovchi narkotik ta'sirida bo'lsa YPX inspektori nima qiladi?",opts:["Ogohlantirib qo'yadi","Haydovchilik guvohnomasini musodara qilib tibbiy ko'rikka yuboradi","Jarima yozadi","Avtomobilni to'xtatib qo'yadi"],ans:1,exp:"Narkomik yoki alkogol ta'sirida haydash qat'iy taqiqlanadi. Inspektor guvohnomani olib tibbiy ko'rikka yuborish huquqiga ega."},
+  {q:"Piyodalar o'tish joyida piyoda o'tib bo'lgach haydovchi qachon yo'lni davom ettirishi mumkin?",opts:["Piyoda o'tish joyiga kirishi bilanoq","Piyoda o'tish joyini to'liq bo'shatgandan keyin","Piyoda 1 metr o'tganda","Ixtiyoriy"],ans:1,exp:"Haydovchi piyoda yo'lni butunlay bo'shatib, xavfsiz masofaga chiqqandan keyingina harakat qilishi mumkin."},
+  {q:"'Asosiy yo'l' belgisi qanday ko'rinishda bo'ladi?",opts:["Qizil aylana","Sariq rombsimon","Ko'k to'rtburchak","Qizil uchburchak"],ans:1,exp:"'Asosiy yo'l' (2.1) belgisi sariq rombsimon shaklda, qora chegarali bo'ladi. Bu yo'lda ketayotganlar ustunlikka ega."},
+  {q:"Tepalik oldida to'xtab qolsa, mashina qaysi tomonga burilishi kerak?",opts:["Chapga","O'ng tomonga yo'l chekkasiga","Istalgan tomonga","Oldinga"],ans:1,exp:"Tepalikda to'xtab qolgan holda mashina o'ng tomonga — yo'l chetiga burilishi va qo'l tormoziga qo'yilishi shart."},
+  {q:"Imtihonda nechta noto'g'ri javob berganda darhol muvaffaqiyatsiz hisoblanadi?",opts:["1 ta","2 ta","3 ta","5 ta"],ans:1,exp:"Nazariy imtihonda 2 ta yoki undan ortiq noto'g'ri javob berganda imtihon darhol tugatiladi va muvaffaqiyatsiz hisoblanadi."},
+  {q:"Svetoforsiz chorrahada o'ngdan kelayotgan avtomobil bilan munosabat?",opts:["Siz o'tasiz","O'ngdan kelayotgan ustunlikka ega","Tezroq ketayotgan o'tadi","Kattaroq mashina o'tadi"],ans:1,exp:"Svetoforsiz teng chorrahada o'ng tomondan kelayotgan transport vositasi ustunlik huquqiga ega — bu 'o'ngga berish' qoidasi."},
+  {q:"Mashina tormozi ishlamay qolsa eng birinchi nima qilish kerak?",opts:["Dvigatelni o'chirish","Motor tormozini ishlatish va qo'l tormozini sekin bosish","Darhol to'xtash","Signal berish"],ans:1,exp:"Birinchi navbatda motor tormozi (tezlikni pastga tushirish) ishlatiladi, keyin qo'l tormozi sekin-asta bosiladi. Darhol qo'l tormozini tortish aylanishga olib kelishi mumkin."},
+  {q:"Temiryo'l kesishmasiga qancha masofada to'xtash belgilanmagan bo'lsa to'xtash kerak?",opts:["1 m","5 m","10 m","50 m"],ans:2,exp:"'TO'XTANG' belgisi bo'lmagan temiryo'l kesishmasida haydovchi kamida 10 metr masofada to'xtab, har ikki tomonga qarashi va xavf yo'qligiga ishonch hosil qilishi shart."},
+  {q:"Tuman ichida qanday fara yoqilishi kerak?",opts:["Uzoq nur farasi","Yaqin nur farasi va tuman farasi","Faqat uzoq nur","Faralar kerak emas"],ans:1,exp:"Tuman ichida yaqin nur farasi va/yoki tuman farasi yoqiladi. Uzoq nur tuman zarrachalarida sochiladi va ko'rinishni yanada yomonlashtiradi."},
+  {q:"Yo'lda ko'rish qobiliyati yaxshi bo'lgan paytda xavfsiz to'xtash masofasi qanday?",opts:["20 m","30 m","45–50 m (60 km/h da)","100 m"],ans:2,exp:"60 km/h tezlikda quruq yo'lda xavfsiz to'xtash masofasi taxminan 45–50 metr. Tezlik oshgani sari bu masofa keskin ortadi."},
+  {q:"Jamoat transport vositasi yo'lovchi tushirayotganda haydovchi nima qilishi kerak?",opts:["Tezroq o'tib ketadi","Sekinlashadi va kerak bo'lsa to'xtaydi","Qo'ng'iroq chalib o'tadi","Chap qatorga o'tadi"],ans:1,exp:"Yo'lovchi tushirayotgan avtobus yoki tramvay oldida haydovchi sekinlashib, zarur bo'lsa to'xtab kutishi shart."},
+  {q:"Mexanik uzatma (MKPP) da yonbag'irdan tushayotganda nima qilish kerak?",opts:["Neytral uzatmada tushish","Quyi uzatmani qo'yib motor tormozidan foydalanish","Tez tushish","Faqat tormoz bosish"],ans:1,exp:"Yonbag'irdan tushishda quyi uzatmada tushib motor tormozidan foydalanish tormozlar zo'riqishini kamaytiradi va mashina ustidan nazoratni saqlaydi."}
+];
+
+const signs = [
+  {id:1,name:"Xavfli burilish (o'ng)",cat:"ogohlantiruvchi",catColor:"#f59e0b",svg:`<svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="40,8 74,68 6,68" fill="#fff" stroke="#e11d48" stroke-width="4"/><path d="M40 32 C40 32 52 38 50 55" stroke="#222" stroke-width="3.5" stroke-linecap="round" fill="none"/><path d="M50 55 L46 50 M50 55 L55 51" stroke="#222" stroke-width="3" stroke-linecap="round"/></svg>`,desc:"Yo'lda 90° dan ortiq burilish borligi haqida ogohlantiradi.",tip:"Bilet savollarida uchburchak = ogohlantirish, dumaloq = taqiq, to'rtburchak = axborot."},
+  {id:2,name:"Asosiy yo'l",cat:"ustunlik",catColor:"#1a56db",svg:`<svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="10" y="10" width="60" height="60" rx="6" fill="#f59e0b" stroke="#000" stroke-width="3" transform="rotate(45 40 40)"/></svg>`,desc:"Siz harakatlanayotgan yo'l boshqa yo'lga nisbatan ustunlik huquqiga ega.",tip:"Sariq romb = siz ustunlikdasiz. Boshqa yo'ldan kelayotganlar to'xtashi shart."},
+  {id:3,name:"To'xtash ta'qiqlangan",cat:"taqiqlovchi",catColor:"#e11d48",svg:`<svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="30" fill="#fff" stroke="#e11d48" stroke-width="4"/><line x1="18" y1="40" x2="62" y2="40" stroke="#e11d48" stroke-width="5" stroke-linecap="round"/></svg>`,desc:"Avtomobilni bu joyda to'xtatish mutlaqo taqiqlanadi.",tip:"Yaqin atrofda (30 m) ham to'xtatish mumkin emas. 'Turish ta'qiqlangan' bilan farqi: unda yuk tushirish uchun qisqa to'xtatish mumkin."},
+  {id:4,name:"Turish ta'qiqlangan",cat:"taqiqlovchi",catColor:"#e11d48",svg:`<svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="30" fill="#fff" stroke="#e11d48" stroke-width="4"/><line x1="18" y1="36" x2="62" y2="36" stroke="#e11d48" stroke-width="4" stroke-linecap="round"/><line x1="18" y1="46" x2="62" y2="46" stroke="#e11d48" stroke-width="4" stroke-linecap="round"/></svg>`,desc:"5 daqiqadan ortiq turish taqiqlanadi. Yo'lovchi tushirish uchun qisqa to'xtatish mumkin.",tip:"Ikki gorizontal chiziq = turish ta'qiqlangan. Bitta chiziq = to'xtash ta'qiqlangan."},
+  {id:5,name:"Berilish",cat:"ustunlik",catColor:"#1a56db",svg:`<svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="40,68 8,14 72,14" fill="#fff" stroke="#e11d48" stroke-width="4"/></svg>`,desc:"Bu belgi yaqinidagi chorrahada asosiy yo'ldan kelayotganlarga yo'l berilishi shart.",tip:"Teskari uchburchak (pastga yo'nalgan) = berilish belgisi. Ko'p biletlarda bu savol bor."},
+  {id:6,name:"To'xtang!",cat:"ustunlik",catColor:"#1a56db",svg:`<svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="40,5 75,25 75,55 40,75 5,55 5,25" fill="#e11d48" stroke="none"/><text x="40" y="48" text-anchor="middle" font-size="14" font-weight="700" fill="white" font-family="sans-serif">STOP</text></svg>`,desc:"Haydovchi ALBATTA to'xtab, asosiy yo'ldan o'tuvchilarga yo'l berishi shart.",tip:"STOP belgisida to'xtamay o'tish qo'pol qoidabuzarlik hisoblanadi va katta jarima solishadi."},
+  {id:7,name:"Tezlik cheklovchi 60",cat:"taqiqlovchi",catColor:"#e11d48",svg:`<svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="32" fill="#fff" stroke="#e11d48" stroke-width="5"/><text x="40" y="50" text-anchor="middle" font-size="22" font-weight="700" fill="#111" font-family="sans-serif">60</text></svg>`,desc:"Maksimal ruxsat etilgan tezlik 60 km/h. Bu belgidan keyin ko'rsatilgan tezlikdan oshib bo'lmaydi.",tip:"Raqam — maksimal tezlik. Cheklov 'Tezlik cheklovi bekor' belgisi yoki aholi punkti oxirigacha amal qiladi."},
+  {id:8,name:"Piyodalar o'tish joyi",cat:"axborot",catColor:"#0e9f6e",svg:`<svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="6" width="68" height="68" rx="8" fill="#1a56db"/><path d="M30 22 Q40 20 42 28 Q44 36 36 40 L40 58" stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none"/><circle cx="40" cy="17" r="5" fill="white"/><path d="M30 45 L44 48" stroke="white" stroke-width="3.5" stroke-linecap="round"/></svg>`,desc:"Bu belgida piyodalar o'tish huquqiga ega. Haydovchi piyodaga yo'l berishi shart.",tip:"Ko'k to'rtburchak = axborot/yo'naltiruvchi. Piyoda o'tish joyida to'xtamay o'tish — katta jarima."},
+  {id:9,name:"Bir tomonlama yo'l",cat:"axborot",catColor:"#0e9f6e",svg:`<svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="6" width="68" height="68" rx="8" fill="#1a56db"/><path d="M18 40 L62 40" stroke="white" stroke-width="5" stroke-linecap="round"/><path d="M52 30 L62 40 L52 50" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>`,desc:"Bu yo'lda faqat belgilangan yo'nalishda harakat qilish mumkin. Teskari yo'nalish qat'iy taqiq.",tip:"Bir tomonlama yo'lda chap qatorga o'tish mumkin. Teskari yo'nalishda kirish — og'ir jarima."},
+  {id:10,name:"Maktab",cat:"ogohlantiruvchi",catColor:"#f59e0b",svg:`<svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="40,8 74,68 6,68" fill="#fff" stroke="#e11d48" stroke-width="4"/><text x="40" y="55" text-anchor="middle" font-size="28" font-family="sans-serif">🏫</text></svg>`,desc:"Bu belgidan keyin maktab yaqinida ehtiyot bo'lish kerak. Ko'pincha 20 km/h cheklov belgisi bilan birga keladi.",tip:"Maktab yaqinida tezlik — maktab ishlash vaqtida 20 km/h. Bolalar kutilmaganda yo'l kesishi mumkin."},
+  {id:11,name:"Kesishma borligini bildirish",cat:"ogohlantiruvchi",catColor:"#f59e0b",svg:`<svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="40,8 74,68 6,68" fill="#fff" stroke="#e11d48" stroke-width="4"/><line x1="40" y1="30" x2="40" y2="60" stroke="#111" stroke-width="4"/><line x1="25" y1="44" x2="55" y2="44" stroke="#111" stroke-width="4"/></svg>`,desc:"Oldinda to'rt tomonlama chorrahaning borligini bildiradi. Ehtiyotkor bo'ling.",tip:"Uchburchak shaklida + xoch = chorrahaga ogohlantirish. Asosiy yo'lda bo'lsangiz ham sekinlashib o'ting."},
+  {id:12,name:"Chap burilish ta'qiqlangan",cat:"taqiqlovchi",catColor:"#e11d48",svg:`<svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="30" fill="#fff" stroke="#e11d48" stroke-width="5"/><path d="M52 28 C52 28 28 28 28 40 C28 52 40 52 40 52" stroke="#111" stroke-width="3.5" stroke-linecap="round" fill="none"/><line x1="28" y1="18" x2="52" y2="42" stroke="#e11d48" stroke-width="5" stroke-linecap="round"/></svg>`,desc:"Shu joyda chapga burilish taqiqlanadi. To'g'ri yoki o'ngga davom etish mumkin.",tip:"Chap burilish taqiqlangan bo'lsa, U-burilish ham taqiqlanadi. Dumaloq belgi = taqiq."},
+];
+
+const rules = [
+  {num:"1",title:"Ustunlik qoidasi — Kim birinchi o'tadi?",body:"Tartibsiz chorrahada: 1) Ustunlik belgisi bo'lgan yo'l; 2) Teng chorrahada o'ngdan kelayotgan. Burovsiz burilishda to'g'ri ketayotgan ustunlikda. Chapga burilayotgan qarshi tomonga yo'l beradi.",tip:"Eslash usuli: o'ngingizdan kelayotganga doim yo'l bering (avlosi bo'lsa)."},
+  {num:"2",title:"Signal berish qoidalari",body:"Burilish yoki qator almashtirishdan kamida 30 metr oldin signal yoqing. Signal — faqat niyat haqida ogohlantirish, ustunlik bermaydi. Signal yoqilgan bo'lsa ham qarama-qarshi tomondan kelayotganlar xavfsiz o'tishini kuting.",tip:"Ko'pchilik signal yoqib, darhol yo'nalishini o'zgartiradi — bu noto'g'ri."},
+  {num:"3",title:"Quvib o'tish (Обгон) qoidalari",body:"Quvib o'tish — chapdan, qarshi qatorga o'tib amalga oshiriladi. Ta'qiqlanadi: to'liq chiziqda, ko'prik/tunnel/tepalikda, piyodalar o'tish joyida, kesishmadan 100 m ichida, svetoforda.",tip:"Yo'l o'rtasidagi uzluksiz chiziq — quvib o'tish mutlaq ta'qiqlangan. Uni kesib o'tish og'ir jarima."},
+  {num:"4",title:"To'xtatib qo'yish va to'xtash qoidasi",body:"To'xtash — 5 daqiqagacha. Turish — 5 daqiqadan ortiq. Taqiqlangan joylar: to'xtash ta'qiqli belgi, temir yo'l kesishmasidan 50 m, to'liq ko'rinish bo'lmagan joylar, avtobus bekatidan 15 m.",tip:"Jamoat transport to'xtog'i oldida turish — doimo ta'qiqlangan."},
+  {num:"5",title:"Yonbag'irda harakat qoidalari",body:"Ko'tarilayotganda ustunlik huquqi bor. Tushayotganda: tor yo'lda ko'tarilayotganga yo'l bering. Tepalikda to'xtab qolsangiz: o'ng tomonga, qo'l tormoziga, quyi uzatmada. Tush uzatmada harakatlanmang.",tip:"MKPP: tepalikdan tushishda quyi uzatmada tushish — motor tormozi tormozlarni asraydi."},
+  {num:"6",title:"Yaqinlashtirish (fara) qoidalari",body:"Shaharda: yaqin nur. Shahar tashqarisida: uzoq nur mumkin, qarshi transport kelganda yaqin nurga o'tkazish. Tuman: tuman farasi. Kunduzi ham fara yoqish tavsiya etiladi (magistrallarda majburiy).",tip:"Qarshi transport yorug'ligidan ko'rinmas bo'lsangiz to'xtang va o'ng chetga o'ting."},
+  {num:"7",title:"Piyodalar o'tish joyi qoidalari",body:"Haydovchi piyodaga yo'l berishi shart. Piyoda o'tishni boshlagan bo'lsa to'xtang. Hattoki piyoda yo'lning yarmini kesib o'tgan bo'lsa ham — kutib turasiz. Yashil chiroqda piyodalar yo'l kesishda bo'lsa ham to'xtang.",tip:"Biletda 'Haydovchi kim ustunlikda?' degan savolda piyoda DOIM ustunlikda."},
+  {num:"8",title:"Alkogol va giyohvand moddalar ta'sirida haydash",body:"O'zbekistonda nol tolerantlik: qondagi spirt miqdori 0.0‰ ham ruxsat etilmaydi. Nafas analizatori yoki qon testida aniqlansa — darhol haydovchilik huquqidan mahrum qilinasiz. Qayta buzganda — jinoiy javobgarlik.",tip:"Pivo ham, dori ham ta'sir qilsa — mutlaqo haydash mumkin emas."},
+];
+
+const jarimalar = [
+  {icon:"🚗",name:"Tezlik oshirilishi 10–20 km/h",amount:"1–2 BHM",detail:"Ogohlantirishdan jarima belgilanadi"},
+  {icon:"⚡",name:"Tezlik oshirilishi 20–40 km/h",amount:"3–5 BHM",detail:"Taxminan 990 000–1 650 000 UZS"},
+  {icon:"🚨",name:"Tezlik oshirilishi 40–60 km/h",amount:"10 BHM",detail:"3 300 000 UZS (2026)"},
+  {icon:"🔴",name:"Qizil chiroqda o'tish",amount:"5–10 BHM",detail:"Takrorlanishda guvohnoma berib olinadi"},
+  {icon:"🍺",name:"Alkogol ta'sirida haydash",amount:"30–50 BHM + guvohnoma",detail:"9 900 000–16 500 000 UZS"},
+  {icon:"📱",name:"Haydash paytida telefon",amount:"1–3 BHM",detail:"Qo'lsiz kit bo'lmasa taqiqlanadi"},
+  {icon:"🪑",name:"Xavfsizlik kamari takmagan",amount:"1 BHM",detail:"Har bir yo'lovchi uchun alohida"},
+  {icon:"🚶",name:"Piyodaga yo'l bermaslik",amount:"3–5 BHM",detail:"Kamera aniqlasa avtomatik jarima"},
+  {icon:"⬅️",name:"Uzluksiz chiziqni kesib o'tish",amount:"5 BHM",detail:"Takrorlanishda guvohnoma olib qo'yiladi"},
+  {icon:"🚌",name:"Yo'l berish belgisini buzish",amount:"2–4 BHM",detail:"Avariya bo'lsa ko'p qo'shimcha jarima"},
+  {icon:"🅿️",name:"Ta'qiqlangan joyda to'xtash",amount:"1–2 BHM",detail:"Evakuator xizmati qo'shilishi mumkin"},
+  {icon:"🌕",name:"Tungi vaqtda farashz harakat",amount:"2 BHM",detail:"Haydovchi xavf tug'diradi"},
+];
+
+const tips = [
+  {num:"01",title:"Barcha biletlarni o'rganing",text:"Faqat birinchi 10–20 biletni eslab qolish yetarli emas. Real imtihonda bilet tasodifiy tanlanadi. Kamida 80–90 ta biletni to'liq o'rganing."},
+  {num:"02",title:"Xatolar ustida ishlang",text:"Noto'g'ri javob bergan savollarni alohida daftarga yozing va har kuni qaytadan tekshiring. Xato qilgan joyingiz — imtihonda ham xato qilishingiz ehtimoli yuqori."},
+  {num:"03",title:"Yo'l belgisi shaklini eslab qoling",text:"Uchburchak = ogohlantirish (sariq/qizil). Dumaloq = taqiq (qizil chegara). Ko'k/yashil to'rtburchak = axborot. Bu qoidani bilsangiz ko'plab belgilarni eslamay ham topa olasiz."},
+  {num:"04",title:"Bilet tartibini aralashtirib o'rganing",text:"Har kuni boshqa biletdan boshlang. Miyangiz savolga emas, javobga ko'nikishi kerak. Tartibni eslab o'tish — real imtihonda ishlamaydi."},
+  {num:"05",title:"Vaqtni nazorat qiling",text:"25 daqiqada 20 savol = har savolga 1.25 daqiqa. Qiyin savolga uzoq o'tirib qolmang — keyingilarga o'ting va qaytib keling."},
+  {num:"06",title:"'Doim/Hech qachon/Faqat' so'zlariga e'tibor bering",text:"Bu kuchli so'zlar bo'lgan javoblar ko'p hollarda to'g'ri javob. Masalan: 'Haydovchi DOIM signal berishi kerak' — to'g'ri."},
+  {num:"07",title:"Birinchi yordam savollarini yaxshi bilib oling",text:"Har biletda 2–3 ta birinchi yordam savoli bo'ladi. Arterial/vena qon, suyak sinish, ko'krak bosish qoidalari — bularni yod bilib oling."},
+  {num:"08",title:"Tezlik chegaralarini yod bilib oling",text:"Aholi punkti: 60. Tashqarisi: 90. Magistral: 110. Expressway: 130. Yashash zonasi: 20. Maktab yaqinida: 20. Bu raqamlar ko'p savolda uchraydi."},
+  {num:"09",title:"Imtihon kuni erta keling",text:"Kompyuter testida texnik muammo bo'lishi, navbat bo'lishi mumkin. Kamida 30 daqiqa oldin markazda bo'ling. Asabiylashish ko'p xato qilishga olib keladi."},
+  {num:"10",title:"O'ngdan berish qoidasini eslang",text:"'Ustunlik belgisi yo'q + svetofor yo'q' sharoitida o'ngingizdan kelayotganga doim yo'l bering. Bu eng ko'p chiqadigan chorrahachilik savolidir."},
+  {num:"11",title:"Imtihon kunida yaxshilab uxlang",text:"Oxirgi tunda ko'p o'rganishdan foyda yo'q. Miyangiz uxlagan paytda ma'lumotni mustahkamlaydi. Uxlamagan miya tez charchaydi va noto'g'ri tanlaydi."},
+  {num:"12",title:"Tasodifiy taxminlashdan qoching",text:"Bilmasangiz — qolib ketgan javoblarni qayta o'qing. Ko'pincha birinchi o'qishda to'g'ri javobni sezib qolasiz. Ikkinchi fikr ko'p hollarda noto'g'ri bo'ladi."},
+];
+
+// ========== STATE ==========
+let currentQ = 0, correct = 0, incorrect = 0, answered = false, timerInt = null, timeLeft = 1500;
+let practiceQ = 0, practiceCorrect = 0, practiceIncorrect = 0, practiceAnswered = false;
+let currentSignCat = 'all';
+
+// ========== NAV ==========
+function toggleMenu(){document.getElementById('navLinks').classList.toggle('open')}
+function navTo(el,target){document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));el.classList.add('active');scrollTo2(target);document.getElementById('navLinks').classList.remove('open')}
+function scrollTo2(id){const el=document.getElementById(id);if(el)el.scrollIntoView({behavior:'smooth',block:'start'})}
+
+// ========== TEST ENGINE ==========
+function loadQuestion(){
+  if(currentQ>=questions.length){showResult();return}
+  const q=questions[currentQ];
+  document.getElementById('questionText').textContent=q.q;
+  document.getElementById('questionNum').textContent=`Savol ${currentQ+1} / ${questions.length}`;
+  document.getElementById('progressBar').style.width=((currentQ+1)/questions.length*100)+'%';
+  document.getElementById('progressText').textContent=`${currentQ+1} / ${questions.length}`;
+  document.getElementById('explanationBox').classList.remove('show');
+  document.getElementById('explanationBox').textContent='';
+  document.getElementById('nextBtn').style.display='none';
+  answered=false;
+  const ol=document.getElementById('optionsList');
+  ol.innerHTML='';
+  const letters=['A','B','D','E'];
+  q.opts.forEach((o,i)=>{
+    const btn=document.createElement('button');
+    btn.className='option';
+    btn.innerHTML=`<span class="option-letter">${letters[i]}</span><span>${o}</span>`;
+    btn.onclick=()=>selectAnswer(i,q.ans,q.exp);
+    ol.appendChild(btn);
+  });
+}
+function selectAnswer(chosen,correct_idx,exp){
+  if(answered)return;answered=true;
+  const opts=document.querySelectorAll('#optionsList .option');
+  opts.forEach((o,i)=>{
+    o.classList.add('disabled');
+    if(i===correct_idx)o.classList.add('correct');
+    else if(i===chosen)o.classList.add('wrong');
+  });
+  if(chosen===correct_idx){correct++}else{incorrect++}
+  document.getElementById('testScore').textContent=`To'g'ri: ${correct} | Noto'g'ri: ${incorrect}`;
+  const expBox=document.getElementById('explanationBox');
+  expBox.textContent='💡 '+exp;expBox.classList.add('show');
+  document.getElementById('nextBtn').style.display='inline-flex';
+}
+function nextQuestion(){currentQ++;loadQuestion()}
+function restartTest(){
+  currentQ=0;correct=0;incorrect=0;answered=false;timeLeft=1500;
+  clearInterval(timerInt);
+  document.getElementById('testScore').textContent='To\'g\'ri: 0 | Noto\'g\'ri: 0';
+  document.getElementById('resultScreen').classList.remove('show');
+  document.getElementById('testBody').style.display='block';
+  startTimer();loadQuestion();
+}
+function showResult(){
+  clearInterval(timerInt);
+  document.getElementById('testBody').style.display='none';
+  const rs=document.getElementById('resultScreen');rs.classList.add('show');
+  const total=questions.length;const score=correct;const pass=score>=18;
+  const circle=document.getElementById('resultCircle');
+  circle.className='result-circle '+(pass?'pass':'fail');
+  circle.textContent=score+'/'+total;
+  document.getElementById('resultTitle').textContent=pass?'Tabriklaymiz! Imtihon topshirildi 🎉':'Muvaffaqiyatsiz. Qayta urinib ko\'ring';
+  document.getElementById('resultMsg').textContent=pass?'Amaliy imtihonga o\'tishingiz mumkin!':'18 ta to\'g\'ri javob kerak edi. Ko\'proq mashq qiling.';
+  document.getElementById('resultDetail').textContent=`Natija: ${score} ta to'g'ri / ${total} ta savol`;
+}
+function startTimer(){
+  updateTimerDisplay();
+  timerInt=setInterval(()=>{
+    timeLeft--;updateTimerDisplay();
+    if(timeLeft<=0){clearInterval(timerInt);showResult()}
+  },1000);
+}
+function updateTimerDisplay(){
+  const m=Math.floor(timeLeft/60),s=timeLeft%60;
+  document.getElementById('timer').textContent=`${m}:${s<10?'0'+s:s}`;
+  document.getElementById('timer').style.color=timeLeft<120?'var(--c-danger)':'inherit';
+}
+
+// ========== PRACTICE ==========
+function loadPracticeQuestion(){
+  if(practiceQ>=questions.length){alert('Barcha savollar yakunlandi! Yana boshlash uchun sahifani yangilang.');return}
+  const q=questions[practiceQ];
+  document.getElementById('practiceText').textContent=q.q;
+  document.getElementById('practiceNum').textContent=`Savol ${practiceQ+1} / ${questions.length}`;
+  document.getElementById('practiceExp').classList.remove('show');practiceAnswered=false;
+  const ol=document.getElementById('practiceOptions');ol.innerHTML='';
+  const letters=['A','B','D','E'];
+  q.opts.forEach((o,i)=>{
+    const btn=document.createElement('button');
+    btn.className='option';
+    btn.innerHTML=`<span class="option-letter">${letters[i]}</span><span>${o}</span>`;
+    btn.onclick=()=>{
+      if(practiceAnswered)return;practiceAnswered=true;
+      const opts=document.querySelectorAll('#practiceOptions .option');
+      opts.forEach((op,idx)=>{op.classList.add('disabled');if(idx===q.ans)op.classList.add('correct');else if(idx===i)op.classList.add('wrong')});
+      if(i===q.ans)practiceCorrect++;else practiceIncorrect++;
+      document.getElementById('practiceScore').textContent=`To'g'ri: ${practiceCorrect} | Noto'g'ri: ${practiceIncorrect}`;
+      const exp=document.getElementById('practiceExp');exp.textContent='💡 '+q.exp;exp.classList.add('show');
+    };
+    ol.appendChild(btn);
+  });
+}
+function practiceNext(){practiceQ++;loadPracticeQuestion()}
+
+// ========== TABS ==========
+function switchTab(name){
+  document.querySelectorAll('.tab-btn').forEach((b,i)=>{const tabs=['exam','practice','topic'];b.classList.toggle('active',tabs[i]===name)});
+  document.querySelectorAll('#tests .tab-content').forEach(t=>{t.classList.remove('active')});
+  document.getElementById('tab-'+name).classList.add('active');
+}
+function switchJarimaTab(name){
+  document.querySelectorAll('#jarima .tab-btn').forEach((b,i)=>{const tabs=['speed','fines','docs'];b.classList.toggle('active',tabs[i]===name)});
+  document.querySelectorAll('#jarima .tab-content').forEach(t=>t.classList.remove('active'));
+  document.getElementById('jtab-'+name).classList.add('active');
+}
+
+// ========== SIGNS ==========
+function renderSigns(){
+  const cats=['all','ogohlantiruvchi','taqiqlovchi','ustunlik','axborot'];
+  const catNames={all:'Barchasi',ogohlantiruvchi:'Ogohlantirishlar',taqiqlovchi:'Taqiqlovchilar',ustunlik:'Ustunlik',axborot:'Axborot'};
+  const filterEl=document.getElementById('signsFilter');
+  filterEl.innerHTML='';
+  cats.forEach(c=>{
+    const btn=document.createElement('button');
+    btn.className='filter-btn'+(c===currentSignCat?' active':'');
+    btn.textContent=catNames[c];
+    btn.onclick=()=>{currentSignCat=c;renderSigns()};
+    filterEl.appendChild(btn);
+  });
+  const filtered=currentSignCat==='all'?signs:signs.filter(s=>s.cat===currentSignCat);
+  const grid=document.getElementById('signsGrid');grid.innerHTML='';
+  filtered.forEach(s=>{
+    const card=document.createElement('div');card.className='sign-card';
+    card.innerHTML=`<div class="sign-svg">${s.svg}</div><div class="sign-name">${s.name}</div><div class="sign-cat">${s.cat}</div>`;
+    card.onclick=()=>openSignModal(s);
+    grid.appendChild(card);
+  });
+}
+function openSignModal(s){
+  document.getElementById('signModalSvg').innerHTML=`<div style="width:100px;height:100px;margin:0 auto">${s.svg}</div>`;
+  document.getElementById('signModalName').textContent=s.name;
+  const catEl=document.getElementById('signModalCat');
+  catEl.textContent=s.cat;catEl.style.background=s.catColor+'22';catEl.style.color=s.catColor;catEl.style.border=`1px solid ${s.catColor}44`;
+  document.getElementById('signModalDesc').textContent=s.desc;
+  document.getElementById('signModalTip').textContent='💡 '+s.tip;
+  document.getElementById('signModal').classList.add('show');
+}
+function closeSignModal(e){if(e.target===document.getElementById('signModal'))document.getElementById('signModal').classList.remove('show')}
+
+// ========== RULES ACCORDION ==========
+function renderRules(){
+  const el=document.getElementById('rulesAccordion');el.innerHTML='';
+  rules.forEach((r,i)=>{
+    const item=document.createElement('div');item.className='accordion-item';
+    item.innerHTML=`<div class="accordion-header" onclick="toggleAccordion(${i})"><span class="accordion-num">${r.num}</span><span style="flex:1">${r.title}</span><svg class="accordion-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M5 7l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><div class="accordion-body">${r.body}<div class="rule-tip">💡 <b>Maslahat:</b> ${r.tip}</div></div>`;
+    el.appendChild(item);
+  });
+}
+function toggleAccordion(i){
+  const items=document.querySelectorAll('.accordion-item');
+  items[i].classList.toggle('open');
+}
+
+// ========== JARIMALAR ==========
+function renderJarimalar(){
+  const el=document.getElementById('jarimaList');el.innerHTML='';
+  jarimalar.forEach(j=>{
+    const card=document.createElement('div');card.className='jarima-card';
+    card.innerHTML=`<div class="jarima-icon">${j.icon}</div><div class="jarima-info"><h4>${j.name}</h4><p>${j.detail}</p></div><div class="jarima-amount"><span>${j.amount}</span><small>2026 miqdor</small></div>`;
+    el.appendChild(card);
+  });
+}
+
+// ========== TIPS ==========
+function renderTips(){
+  const el=document.getElementById('tipsList');el.innerHTML='';
+  tips.forEach(t=>{
+    const card=document.createElement('div');card.className='tip-card';
+    card.innerHTML=`<div class="tip-num">${t.num}</div><h4>${t.title}</h4><p>${t.text}</p>`;
+    el.appendChild(card);
+  });
+}
+
+// ========== TOPIC TEST ==========
+function startTopicTest(topic){
+  const topicQ={
+    signs:questions.filter((_,i)=>[0,1,10,11].includes(i)),
+    crossroads:questions.filter((_,i)=>[1,2,13,18].includes(i)),
+    speed:questions.filter((_,i)=>[3,16,17].includes(i)),
+    firstaid:questions.filter((_,i)=>[7,8].includes(i))
+  };
+  const qs=topicQ[topic]||questions.slice(0,5);
+  let tQ=0,tCorrect=0,tAnswered=false;
+  const area=document.getElementById('topicTestArea');
+  const render=()=>{
+    if(tQ>=qs.length){area.innerHTML=`<div class="card" style="text-align:center;padding:28px"><div style="font-size:48px;margin-bottom:12px">${tCorrect===qs.length?'🏆':'📚'}</div><h3>${tCorrect}/${qs.length} to'g'ri</h3><p style="color:var(--c-gray-500);margin:8px 0 20px">Mavzu: ${topic}</p><button class="btn btn-primary" onclick="startTopicTest('${topic}')">Qayta boshlash</button></div>`;return}
+    const q=qs[tQ];const letters=['A','B','D','E'];
+    area.innerHTML=`<div class="test-container"><div class="test-header"><h3>Mavzu testi — ${tQ+1}/${qs.length}</h3></div><div class="test-body"><div class="question-num">Savol ${tQ+1}</div><div class="question-text">${q.q}</div><div class="options-list" id="topicOpts"></div><div class="explanation" id="topicExp"></div></div><div class="test-footer"><span class="test-score">To'g'ri: ${tCorrect}</span><button class="btn btn-primary" id="topicNext" style="display:none" onclick="">Keyingisi →</button></div></div>`;
+    q.opts.forEach((o,i)=>{
+      const btn=document.createElement('button');btn.className='option';
+      btn.innerHTML=`<span class="option-letter">${letters[i]}</span><span>${o}</span>`;
+      btn.onclick=()=>{
+        if(tAnswered)return;tAnswered=true;
+        document.querySelectorAll('#topicOpts .option').forEach((op,idx)=>{op.classList.add('disabled');if(idx===q.ans)op.classList.add('correct');else if(idx===i)op.classList.add('wrong')});
+        if(i===q.ans)tCorrect++;
+        const exp=document.getElementById('topicExp');exp.textContent='💡 '+q.exp;exp.classList.add('show');
+        const nb=document.getElementById('topicNext');nb.style.display='inline-flex';nb.onclick=()=>{tQ++;tAnswered=false;render()};
+      };
+      document.getElementById('topicOpts').appendChild(btn);
+    });
+  };render();
+}
+
+// ========== INIT ==========
+window.onload=()=>{
+  loadQuestion();loadPracticeQuestion();startTimer();
+  renderSigns();renderRules();renderJarimalar();renderTips();
+};
+</script>
+</body>
+</html>
